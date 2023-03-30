@@ -6,7 +6,6 @@ const pass = 1234;
 
 
 app.use(express.static("public"));
-app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 import templateEngine from "./util/templateEngine.js";
