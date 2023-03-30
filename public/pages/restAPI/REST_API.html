@@ -1,0 +1,40 @@
+<h1>Design of REST APIs</h1>
+
+<section>
+    <h2>1. What is a REST API?</h2>
+    <p>Representational State Transfer (REST) is an architectural style for designing networked applications. A REST API
+        is a set of rules and conventions for building and interacting with web services using HTTP and standard web
+        technologies. It aims to provide a simple, stateless, and scalable architecture for web applications.</p>
+</section>
+<h2>2. REST API Conventions</h2>
+<p>When designing a REST API, adhere to the following conventions:</p>
+<ul>
+    <li>Resource-based URLs: Design URLs to represent resources (nouns) rather than actions (verbs). For example, use
+        "/users" instead of "/getAllUsers".</li>
+    <li>HTTP Methods: Use standard HTTP methods to perform actions on resources:
+
+        <ul>
+            <li><strong>GET</strong> to retrieve a resource or a collection of resources.</li>
+            <li><strong>POST</strong> to create a new resource.</li>
+            <li><strong>PUT</strong> to update a resource.</li>
+            <li><strong>PATCH</strong> to partially update a resource.</li>
+            <li><strong>DELETE</strong> to delete a resource.</li>
+        </ul>
+    </li>
+    <img src="/assets/images/rest.png" class="snippet">
+    <li>HTTP Status Codes: Use appropriate HTTP status codes to indicate the result of an API request. Some common
+        status codes are:
+        <ul>
+            <li><strong>200</strong> OK for successful GET, PUT, and PATCH requests.</li>
+            <li><strong>201</strong> Created for successful POST requests.</li>
+            <li><strong>204</strong> No Content or successful DELETE requests.</li>
+            <li><strong>400</strong> Bad Request for requests with incorrect syntax or invalid data.</li>
+            <li><strong>401</strong> Unauthorized for requests that require authentication.</li>
+            <li><strong>403</strong> Forbidden for requests that the user is not authorized to perform.</li>
+            <li><strong>404</strong> Not Found for requests referencing non-existent resources.</li>
+            <li><strong>500</strong> Internal Server Error for server-side errors.</li>
+        </ul>
+    </li>
+    <li>Consistent Naming: Use consistent naming conventions for URLs, such as lowercase and hyphen-separated words
+        (e.g., /user-profiles).</li>
+</ul>

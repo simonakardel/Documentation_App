@@ -1,0 +1,50 @@
+<h1>Fetching Data in Javascript</h1>
+
+<section>
+    <h2>Introduction to Fetch</h2>
+    <p>
+        The Fetch API is a modern, powerful, and flexible API for fetching resources in JavaScript. It is a built-in
+        feature of modern web browsers and is designed to replace XMLHttpRequest. The Fetch API is promise-based and
+        follows the ES6 standard.
+    </p>
+</section>
+
+
+<section>
+    <h2>Basic Syntax</h2>
+    <p>
+        To use the Fetch API, call the global fetch() function with the resource URL as its argument:
+    </p>
+    <img src="/assets/images/fetch.svg" class="snippet">
+</section>
+
+<section>
+    <h2>Handling Responses</h2>
+    <p>
+        The fetch() function returns a promise that resolves to a Response object. To handle the response, use the
+        .then() method followed by another promise to parse the response data, and another .then() to access the parsed
+        data:
+    </p>
+    <img src="/assets/images/fetch2.svg" class="snippet">
+    <p>
+        In the example above, the response is parsed as JSON. You can use other parsing methods, e.g. .text().
+    </p>
+</section>
+
+<section>
+    <h2>Using Fetch with async/await</h2>
+    <p>
+        You can use the Fetch API with the ES6 async/await syntax to write cleaner and more readable code:
+    </p>
+    <img src="/assets/images/async.svg" class="snippet">
+</section>
+
+
+<section>
+    <h2>Fetch with Request Options</h2>
+    <p>
+        You can provide an optional second argument to the fetch() function to specify request options, such as method,
+        headers, and body:
+    </p>
+    <img src="/assets/images/post.svg" class="snippet">
+</section>

@@ -1,0 +1,52 @@
+
+      <h1>Package.json</h1>
+
+      <section>
+        <h2>1. What is package.json?</h2>
+        <p>The package.json file is a file in Node.js projects that contains metadata about the project and its dependencies. It serves as a central point for managing dependencies, scripts, versioning, and other project-related configurations.</p>
+      </section>
+
+
+      <section>
+        <h2>2. Creating package.json manually</h2>
+        <p>To create a package.json file manually, follow these steps:</p>
+          <ol>
+            <li>Create a new file named package.json in the root of your project directory.</li>
+            <li>Fill in fields you'd like to include in JSON format. See the example below for reference:</li>         
+          </ol>
+          <img src="/assets/images/package.svg" class="snippet">
+          <h3>2.1 Loading changes in package.json</h3>
+          <p>To load any changes or added dependencies from package.json file run the following command:</p>
+          <img src="/assets/images/npm.svg" class="snippet">
+      </section>
+
+<section>
+  <h2>4. Commonly Used Fields</h2>
+<ul>
+    <li>description: A brief description of the project.</li>
+    <li>main: The entry point of the project (e.g., app.js).</li>
+    <li>scripts: A collection of custom scripts that can be run using npm run script-name.</li>
+    <li>repository: Information about the project's repository, including its type and URL.</li>
+    <li>author: The name and contact information of the project's author.</li>
+    <li>license: The project's license (e.g., MIT).</li>
+    <li>dependencies: A list of the project's dependencies, along with their version numbers.</li>
+</ul>
+</section>
+
+<section>
+  <h2>5. Using the terminal to initialize Node project</h2>
+  <p>Another way to create a package.json file is to run the following command in your project's directory:</p>
+  <img src="/assets/images/init.svg" class="snippet">
+  <p>Follow the prompts to set up your project's properties. You can leave the default values or provide your own.</p>
+</section>
+
+<section>
+  <h2>6. Manage dependencies</h2>
+  <p>To add dependencies to your project, use the npm command-line tool. For example, to install Express as a dependency run:</p>
+  <img src="/assets/images/install.svg" class="snippet">
+  <p>This command will download the latest version of Express and update the dependencies field in your package.json file. </p>
+</section>
+
+
+
+

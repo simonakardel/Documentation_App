@@ -1,0 +1,22 @@
+<h1>Export and Import in Node.js</h1>
+<p>In Node.js, there are two module systems: CommonJS and ES modules (denoted by the type property in package.json). Both module systems allow you to organize and structure your code into reusable pieces, but they have differences in syntax and behavior.</p>
+
+<section>
+    <h2>1. CommonJS</h2>
+    <p>CommonJS is the default and traditional module system in Node.js. It uses require() to import modules and module.exports or exports to export them. Here's an example of exporting and importing using CommonJS:</p>
+    <img src="/assets/images/export.svg" class="snippet"> 
+    <img src="/assets/images/import.svg" class="snippet">
+</section>
+
+<section>
+    <h2>2. ES Modules</h2>
+    <p>ES modules are the module system used in modern JavaScript and have been adopted by Node.js as an alternative to CommonJS. ES modules use import and export statements for importing and exporting.
+
+        To use ES modules in Node.js, you need to set the type property to "module" in your package.json:</p>
+    <img src="/assets/images/typemodule.svg" class="snippet">
+    
+    <h3>Exporting in ES</h3>
+    <img src="/assets/images/typeexport.svg" class="snippet">
+    <h3>Importing in ES</h3>
+    <img src="/assets/images/typeimport.svg" class="snippet">
+</section>

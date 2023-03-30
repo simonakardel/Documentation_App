@@ -1,0 +1,64 @@
+
+    <h1>Data Types and Variables</h1>
+    
+    <section>
+        <h2>1. Primitive Data Types</h2>
+        <ul>
+            <li>Number: Numeric values, including integers and floating-point numbers.</li>
+            <li>String: A sequence of characters enclosed in single or double quotes.</li>
+            <li>Boolean: Represents true or false values.</li>
+            <li>Null: Represents a non-existent or invalid object reference.</li>
+            <li>Undefined: Represents a variable that has not been assigned a value.</li>
+        </ul>  
+        <img src="/assets/images/primitive.svg" class="snippet">
+    </section>
+  
+    <section>
+        <h2>2. Non-Primitive Data Types</h2>
+        <ul>
+            <li>Object: A collection of properties, each with a key and value.</li>
+            <li>Array: A special kind of object used to store ordered collections of data.</li>
+            <li>Function: A reusable block of code that can be invoked with arguments.</li>
+        </ul>
+        <img src="/assets/images/non-primitive.svg" class="snippet">
+    </section>
+    
+    <section>
+        <h2>3. Declaring Variables</h2>
+        <p>In ES6 (ECMAScript 2015), there are three ways to declare variables: using var, let, and const. In modern JavaScript, it is recommended to use let and const over var due to their improved scoping behavior.</p>
+   
+            <div>
+                <h3>let</h3>
+                <p>Variables declared with let are block-scoped, meaning their scope is limited to the block (enclosed by {}) in which they are declared. This prevents unintended access or modification of the variable outside its intended scope. let variables are not hoisted to the top of their scope, so they are only accessible after the line where they are declared. You can reassign values to let variables.</p>
+            </div>
+            <br>
+            <div>
+                <h3>const</h3>
+                <p>Variables declared with const are also block-scoped, like let. However, const variables must be assigned a value at the time of declaration, and their value cannot be changed afterward. This makes const suitable for declaring constants or values that should not be modified during the program's execution.</p>
+            </div>
+                
+        <img src="/assets/images/variables.svg" class="snippet">
+        <p>In summary, in modern JavaScript (ES6 and later), use let for variables that will change their values over time, and use const for variables that should remain constant. Both let and const provide better scoping behavior than var, which helps prevent bugs and makes your code easier to understand and maintain.</p>
+    </section>
+    
+    <section>
+         <h2>4. Scope</h2>
+         <p>In JavaScript, scope refers to the accessibility and visibility of variables and functions within different parts of the code. It determines where a variable or function can be used and modified.</p>
+            <div>
+                <h3>Global Scope</h3>
+                <p>When a variable or function is declared outside of any function or block, it is said to be in the global scope. Global variables and functions can be accessed and modified from any part of the code, including within functions and blocks. However, using too many global variables can lead to conflicts and make your code harder to maintain.</p>
+            </div>
+            <div>
+                <h3>Block Scope</h3>
+                <p>When a variable is declared using the let or const keyword inside a block (enclosed by {}), it is said to be in the block scope. Block-scoped variables can only be accessed and modified within the block in which they are declared. They are not visible outside the block.</p>
+            </div>
+        <img src="/assets/images/global-scope.svg" class="snippet">
+    </section>
+    
+  
+    <section>
+        <h2>5. Type Coercion and Equality</h2>
+        <p>JavaScript performs automatic type coercion when comparing values with <code>==</code>. To avoid this, use the strict equality operator <code>===</code>:</p>
+        <img src="/assets/images/equality.svg" class="snippet">
+    </section>
+

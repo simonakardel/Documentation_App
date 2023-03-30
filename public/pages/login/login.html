@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="/assets/css/login.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main>
+            <div>
+                <div class="flex-column first">
+                    <img class="logo-large" src="/assets/images/nodeChroniclesLogo.svg"/>
+                    <h2>Log in to your account</h2>
+                    <p>Welcome back! Please enter your details.</p>
+                </div>
+                <form class="flex-column" method="POST" action="/login">
+                    <div class="flex-column">
+                        <label for="email" class="input-label">Email</label>
+                        <input type="email" name="email" required class="login-input" placeholder="example@gmail.com"/>
+                    </div>
+                    <div class="flex-column">
+                        <label for="password" class="input-label">Password</label>
+                        <input type="password" name="password" required class="login-input"/> 
+                    </div>
+                    <input type="submit" value="Log in" class="login-btn">
+                    <p class="small-p">Don't have an account? <a href="/signup">Sign up</a></p>
+                </form>
+            </div>
+        </main>
+        <script src="" async defer></script>
+    </body>
+</html>

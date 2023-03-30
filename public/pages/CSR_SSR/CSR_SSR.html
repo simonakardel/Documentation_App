@@ -1,0 +1,42 @@
+<h1>Server-Side Rendering (SSR) vs. Client-Side Rendering (CSR)</h1>
+<p>Server-Side Rendering (SSR) and Client-Side Rendering (CSR) are two different approaches to displaying content in web applications. Both have their advantages and disadvantages when it comes to time, resources spent, and SEO.</p>
+
+<h2>1. Time:</h2>
+<h3>SSR:</h3>
+<ul>
+    <li>Pros: Faster initial page load, as the server sends a fully rendered HTML page to the browser. The user can see the content immediately, even if JavaScript is not fully loaded or executed.</li>
+    <li>Cons: Slower page transitions, as each navigation requires a new request to the server, and the server needs to render the HTML for the new page before sending it to the browser.</li>
+</ul>
+
+<h3>CSR:</h3>
+<ul>
+    <li>Pros: Faster page transitions, as subsequent navigations can be handled by the client without requesting a new HTML page from the server. This can provide a smoother user experience once the application is loaded.</li>
+    <li>Cons: Slower initial page load, as the browser needs to load and execute JavaScript before it can render the content. This can result in a "blank page" or "loading screen" while the JavaScript is being loaded and executed.</li>
+</ul>
+
+<h2>2. Resources spent (duration, when, and where):</h2>
+<h3>SSR:</h3>
+<ul>
+    <li>Pros: Offloads rendering tasks from the client to the server, which can be beneficial for devices with limited resources (e.g., low-end smartphones). The client's main responsibility is to display the content sent by the server.</li>
+    <li>Cons: Higher server load, as the server needs to render the HTML for each request. This can lead to increased server resource usage, especially for applications with high traffic or complex rendering tasks.</li>
+</ul>
+
+<h3>CSR:</h3>
+<ul>
+    <li>Pros: Lower server load, as the server's main responsibility is to serve static files (HTML, CSS, and JavaScript) and API endpoints. Rendering tasks are offloaded to the client, reducing server resource usage.</li>
+    <li>Cons: Increased client resource usage, as the client is responsible for rendering the content. This can lead to performance issues on devices with limited resources or slow internet connections.</li>
+</ul>
+
+<h2>3. SEO:</h2>
+<h3>SSR:</h3>
+<ul>
+    <li>Pros: Better SEO performance, as search engines receive a fully rendered HTML page, making it easier to index and rank the content. SSR is particularly beneficial for websites with dynamic content that needs to be indexed by search engines.</li>
+    <li>Cons: Potentially slower page transitions can negatively impact user engagement and, therefore, SEO rankings indirectly. However, this is a minor disadvantage compared to the SEO benefits of SSR.</li>
+</ul>
+<h3>CSR:</h3>
+<ul>
+    <li>Pros: Faster page transitions can lead to better user engagement, which can positively impact SEO rankings indirectly.</li>
+    <li>Cons: Poorer SEO performance for some search engines, as they may have difficulty indexing content rendered on the client-side. Although modern search engines like Google have improved their ability to index client-rendered content, it is still not as reliable as server-rendered content.</li>
+</ul>
+
+

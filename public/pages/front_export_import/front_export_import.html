@@ -1,0 +1,34 @@
+<h1>Export and Import in the front-end</h1>
+<p>In frontend JavaScript, the type="module" attribute is used to specify that a script should be treated as an ES module. With ES modules, you can use the import and export statements to modularize your code, allowing you to separate your code into smaller, reusable pieces.</p>
+
+<section>
+    <h2>1. Exporting</h2>
+    <p>To export a variable, function, or class, use the export keyword. You can export multiple items from a single module. There are two types of exports: named exports and default exports.</p>
+
+    <h3>Named exports</h3>
+        <p> You can export multiple named items from a module. To create a named export, simply use the export keyword before the declaration of the variable, function, or class.</p>
+        <img src="/assets/images/named.svg" class="snippet"> 
+
+        <h3>Default exports</h3>
+        <p>Each module can have only one default export. A default export is usually used when a module has a primary item to export, such as a class or a single function.</p>
+        <img src="/assets/images/default.svg" class="snippet"> 
+    
+</section>
+
+<section>
+    <h2>2. Importing</h2>
+    <p>To use the exported items from another module, use the import statement.</p>
+
+    <h3>Importing named exports</h3>
+        <p>When importing named exports, you need to use the same names as the ones used during exporting, and you must wrap them in curly braces {}.</p>
+        <img src="/assets/images/namedimport.svg" class="snippet"> 
+
+        <h3>Importing default exports</h3>
+        <p>When importing a default export, you can choose any name you like, without the need for curly braces.</p>
+        <img src="/assets/images/defaultimport.svg" class="snippet"> 
+</section>
+
+<section>
+    <p>To use ES modules in frontend JavaScript, add the type="module" attribute to the script tag in your HTML file:</p>
+    <img src="/assets/images/scripttype.svg" class="snippet">
+</section>

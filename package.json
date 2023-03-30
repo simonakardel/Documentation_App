@@ -1,0 +1,28 @@
+{
+  "name": "documentation_node.js",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Documentation for learning Javascript and Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonakardel/Documentation_App.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Javascript",
+    "documentation"
+  ],
+  "author": "Simona Kardel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonakardel/Documentation_App/issues"
+  },
+  "homepage": "https://github.com/simonakardel/Documentation_App#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

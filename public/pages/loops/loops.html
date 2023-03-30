@@ -1,0 +1,36 @@
+
+<h1>Loop methods - map, filter, find, reduce, sort, forEach</h1>
+<p>These methods are higher-order functions that take a callback function as an argument, which is applied to each element in the array. They provide a more declarative and functional approach to looping compared to traditional loops like for or while.</p>   
+<section>
+  <h2>1. map()</h2>
+  <p>The map() method creates a new array by applying a given function to every element in the original array. The original array is not modified. The callback function receives the current element, its index, and the array itself as arguments.</p>
+  <img src="/assets/images/map.svg" class="snippet">
+</section>    
+<section>
+  <h2>2. filter()</h2>
+  <p>The filter() method creates a new array containing only the elements that satisfy a given condition specified by the callback function. The original array is not modified. The callback function receives the current element, its index, and the array itself as arguments.</p>
+  <img src="/assets/images/filter.svg" class="snippet">
+</section>   
+<section>
+  <h2>3. reduce()</h2>
+  <p>The reduce() method accumulates a single value by successively applying a callback function to each element in the array, from left to right. The callback function receives the accumulator, the current element, its index, and the array itself as arguments. An initial value for the accumulator can be provided as an optional second argument.</p>
+  <img src="/assets/images/reduce.svg" class="snippet">
+</section> 
+<section>
+  <h2>4. find()</h2>
+  <p>The find() method returns the first element in the array that satisfies a given condition specified by the callback function. If no element meets the condition, undefined is returned. The callback function receives the current element, its index, and the array itself as arguments.</p>
+  <img src="/assets/images/find.svg" class="snippet">
+</section>
+<section>
+  <h2>5. sort()</h2>
+  <p>The sort() method sorts the elements of the array in place, meaning it mutates the original array. By default, it sorts elements as strings, which may lead to unexpected results for numerical values. You can provide a custom compare function as an argument to define the desired sorting order.</p>
+  <img src="/assets/images/sort.svg" class="snippet">
+</section>
+<section>
+  <h2>6. forEach()</h2>
+  <p>The forEach() method executes a given function for each element in the array. Unlike map, filter, or reduce, it does not return a new array or value. It is typically used for side effects, such as logging or modifying external data. The callback function receives the current element, its index, and the array itself as arguments.</p>
+  <img src="/assets/images/forEach.svg" class="snippet">
+</section>
+
+
+    

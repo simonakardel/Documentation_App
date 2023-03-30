@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Nodemon in Node.js</title>
+</head>
+<body>
+    <h1>Using Nodemon in Node.js</h1>
+<section >
+    <h2>Introduction</h2>
+    <p>
+        Nodemon is a utility that monitors your Node.js application for any changes in the source code and automatically restarts the server when changes are detected. This saves time and increases productivity during development as you don't need to manually restart the server after making changes to the code.
+    </p>
+</section>
+
+
+<section >
+    <h2>Installation</h2>
+    <p>
+        Nodemon can be installed as a global package or as a development dependency in your project. To install Nodemon globally, run the following command:
+    </p>
+    <img src="/assets/images/nodemon_install.svg" class="snippet">
+    <p>
+        To install Nodemon as a development dependency in your project, navigate to your project's root directory and run the following command:
+    </p>
+    <img src="/assets/images/node-dev.svg" class="snippet">
+</section>
+
+
+<section>
+    <h2>Usage</h2>
+    <p>
+        Once Nodemon is installed, you can use it to run your Node.js application by simply replacing the "node" command with "nodemon" followed by the entry point file of your application, like this:
+    </p>
+    <img src="/assets/images/nodemon.svg" class="snippet">
+</section>
+
+<section >
+    <h2>Configuration</h2>
+    <p>
+        You can customize Nodemon's behavior by creating a configuration file called "nodemon.json" in the root directory of your project. Some common configuration options include:
+    </p>
+    <ul>
+        <li>
+            <strong>watch:</strong> Specify the directories and files to be watched for changes.
+        </li>
+        <li>
+            <strong>ignore:</strong> Specify the directories and files to be ignored and not trigger a restart.
+        </li>
+        <li>
+            <strong>ext:</strong> Specify the file extensions to be watched.
+        </li>
+        <li>
+            <strong>delay:</strong> Specify the delay between the change detection and the server restart.
+        </li>
+    </ul>
+    <p>
+        An example configuration file:
+    </p>
+    <img src="/assets/images/config_node.svg" class="snippet">
+
+</section>
+
